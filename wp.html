@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandioso - Sekcje</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#000000] text-white font-serif">
+
+    <header class="bg-[#062F4F] p-6 text-center shadow-lg">
+        <h1 class="text-3xl font-bold">Strona o Grandioso</h1>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <article class="bg-[#813772] p-6 rounded-lg shadow-lg">
+            <h2 class="text-[#062F4F] text-2xl font-semibold">Sekcje</h2>
+            <p class="mt-2">Ten artykuł omówi nieco <strong>sekcje</strong> znajdujące się w Orkiestrze. Dowiedz się więcej o <em>instrumentach</em> w zespole.</p>
+        </article>
+
+        <table class="w-full border-collapse border border-white mt-6 text-center shadow-md">
+            <caption class="text-lg text-[#B82601] font-semibold mb-4">Liczebność Sekcji</caption>
+            <thead>
+                <tr class="bg-[#062F4F] text-white">
+                    <th class="p-3 border-r border-white">Nazwa</th>
+                    <th class="p-3">Liczebność</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-[#813772]">
+                    <td class="p-2 border-r border-white">Flety</td>
+                    <td>około 30</td>
+                </tr>
+                <tr class="bg-[#B82601]">
+                    <td class="p-2 border-r border-white">Klarnety</td>
+                    <td>około 30</td>
+                </tr>
+                <tr class="bg-[#813772]">
+                    <td class="p-2 border-r border-white">Puzony</td>
+                    <td>około 10</td>
+                </tr>
+                <tr class="bg-[#B82601]">
+                    <td class="p-2 border-r border-white">Saksofony</td>
+                    <td>około 8</td>
+                </tr>
+                <tr class="bg-[#813772]">
+                    <td class="p-2 border-r border-white">Trąbki</td>
+                    <td>około 12</td>
+                </tr>
+                <tr class="bg-[#B82601]">
+                    <td class="p-2 border-r border-white">Perkusja</td>
+                    <td>około 8</td>
+                </tr>
+            </tbody>
+        </table>
+        
+
+        <h2 class="text-[#B82601] text-2xl font-semibold mt-6">Repertuar</h2>
+        <ul class="list-disc pl-6 text-lg">
+            <li class="hover:text-[#B82601] transition duration-300">Fire Ball</li>
+            <li class="hover:text-[#B82601] transition duration-300">Soul Bossa Nova</li>
+            <li class="hover:text-[#B82601] transition duration-300">Eye of the Tiger</li>
+            <li class="hover:text-[#B82601] transition duration-300">Fascinating Drums</li>
+            <li class="hover:text-[#B82601] transition duration-300">Bloody Mary</li>
+            <li class="hover:text-[#B82601] transition duration-300">Final Countdown</li>
+        </ul>
+
+        <section class="mt-6 p-6 bg-[#813772] shadow-lg rounded-lg">
+            <h2 class="text-[#062F4F] text-2xl font-semibold">Dołącz do Grandioso</h2>
+            <form class="space-y-4 mt-4">
+                <div>
+                    <label for="name" class="block text-white font-medium">Imię:</label>
+                    <input type="text" id="name" class="w-full border rounded p-2 text-black" placeholder="Twoje imię">
+                </div>
+                <div>
+                    <label for="surname" class="block text-white font-medium">Nazwisko:</label>
+                    <input type="text" id="surname" class="w-full border rounded p-2 text-black" placeholder="Twoje nazwisko">
+                </div>
+                <div>
+                    <label for="instrument" class="block text-white font-medium">Instrument:</label>
+                    <input type="text" id="instrument" class="w-full border rounded p-2 text-black" placeholder="Twój instrument">
+                </div>
+                <div>
+                    <label for="category" class="block text-white font-medium">Wiek:</label>
+                    <select id="category" class="w-full border rounded p-2 text-black">
+                        <option value="1">10-14</option>
+                        <option value="2">14-18</option>
+                        <option value="3">18-21</option>
+                        <option value="4">21+</option>
+                    </select>
+                </div>
+                <button class="bg-[#B82601] text-white px-4 py-2 rounded-lg hover:bg-red-700 shadow-md">Wyślij</button>
+            </form>
+        </section>
+
+        <h2 class="text-[#B82601] text-2xl font-semibold mt-6">Występ Nicea 2024</h2>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/ypFddkNQW2M" class="mt-3 rounded-lg shadow-lg"></iframe>
+
+        <h2 class="text-[#B82601] text-2xl font-semibold mt-6">Galeria</h2>
+        <div class="flex justify-center gap-4 mt-3">
+            <img src="example.jpg" alt="Przykładowy obrazek" class="w-full max-w-md rounded-lg shadow-lg">
+            <img src="example2.jpg" alt="Przykładowy obrazek" class="w-full max-w-md rounded-lg shadow-lg">
+        </div>
+          
+
+        <h2 class="text-[#B82601] text-2xl font-semibold mt-6">Polub Orkiestrę na Facebook'u</h2>
+            <div id="fb-root"></div>
+            <script
+              async
+              defer
+              crossorigin="anonymous"
+              src="https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v16.0"
+            ></script>
+          
+            <div
+              class="fb-page"
+              data-href="https://www.facebook.com/orkiestragrandioso"
+              data-tabs="timeline"
+              data-width="500"
+              data-height="700"
+              data-small-header="false"
+              data-adapt-container-width="true"
+              data-hide-cover="false"
+              data-show-facepile="true"
+            >
+              <blockquote
+                cite="https://www.facebook.com/orkiestragrandioso"
+                class="fb-xfbml-parse-ignore"
+              >
+                <a href="https://www.facebook.com/orkiestragrandioso">Orkiestra Grandioso</a>
+              </blockquote>
+            </div>
+          
+
+        <details>
+            <summary class="text-[#B82601]">Więcej informacji</summary>
+            <p><a href="http://grandioso.pl/" class="text-[#813772]">Strona Orkiestry</a></p>
+            <p><a href="https://mdk.radom.pl/sekcje/grandioso" class="text-[#813772]">O orkiestrze - MDK Radom</a></p>
+            <p><a href="https://www.youtube.com/@OrkiestraGrandiosoRadom" class="text-[#813772]">YouTube</a></p>
+            <p><a href="http://www.imms.pl/Tematy/Grandioso/grandioso_1.html" class="text-[#813772]">Historia Orkiestry</a></p>
+        </details>
+
+        <h4 class="text-[#B82601] text-xl font-semibold mt-4">Strona w budowie</h4>
+        <progress value="47" max="100" class="w-full mt-2 shadow-md"></progress>
+
+        <div class="flex justify-center space-x-6 mt-6">
+            <div class="text-2xl animate-bounce">⬇️</div>
+            <div class="text-2xl animate-bounce">⬇️</div>
+            <div class="text-2xl animate-bounce">⬇️</div>
+        </div>
+    </main>
+
+    <footer class="bg-[#062F4F] text-white text-center p-4 mt-6 shadow-lg">
+        <p>&copy; Stronka Grandioso 03.2025</p>
+    </footer>
+
+</body>
+</html>

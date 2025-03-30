@@ -1,0 +1,74 @@
+$primary-bg: #f4f4f4;
+$secondary-bg: #ddd;
+$text-color: #333;
+
+@mixin flex-center($justify: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-bg;
+  color: $text-color;
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background-color: $secondary-bg;
+  padding: 10px;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+form {
+  @include flex-center(center);
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+button {
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: lighten(red, 10%);
+  }
+}
+
+@media (max-width: 800px) {
+  .map-container {
+    display: none;
+  }
+  body {
+    background-color: lighten($primary-bg, 10%);
+  }
+}
